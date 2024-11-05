@@ -18,9 +18,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "miragejs": ["node_modules/miragejs"]
+    }
   },
   "include": [
-    "src"
+    "src",
+    "declarations.d.ts"
   ]
 }
